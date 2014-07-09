@@ -47,6 +47,10 @@
 #   end
 # end
 
+# Use LiveReload
+activate :livereload
+
+# Compass configuration
 set :css_dir, 'stylesheets'
 
 set :js_dir, 'javascripts'
