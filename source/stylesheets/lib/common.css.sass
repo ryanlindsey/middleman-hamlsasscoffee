@@ -1,1 +1,46 @@
 @import "variables", "mixins", "fonts"
+
+.testing-syntax-highlighting
+  font-size: 16px
+  width: 55px
+  height: 55px
+  display: inline-block
+  h3
+    font-size: 14px
+    background-color: #000 // just because
+    color: #fff
+    &.something
+      background-repeat: no-repeat
+    .blurb &
+      position: relative
+      z-index: 0
+  img,
+  video,
+  embed,
+  object,
+  .size-auto,
+  .size-full,
+  .size-large,
+  .size-medium,
+  .size-thumbnail
+    height: auto
+    max-width: 100%
+
+*, body, input, button, select, textarea
+  -webkit-font-smoothing: antialiased
+
+h1
+  font-size: $base-fontsize * 2
+
+h2
+  font-size: $base-fontsize * 1.5
+
+h3
+  font-size: $base-fontsize * 1.3
+
+h4
+  font-size: $base-fontsize * 1.3
+  font-weight: normal
+
+h5, h6
+  font-size: $base-fontsize * 1.1
